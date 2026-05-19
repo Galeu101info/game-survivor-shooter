@@ -1,7 +1,8 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1779214169
+::res://::1779214721
 default_bus_layout.tres::AudioBusLayout::6564268947468103023::1779199126::0::1::::<><><>0<>0<><>::
 icon.png::CompressedTexture2D::15047351210411190::1779199126::1779212189::1::::<><><>0<>0<>1b715dbefff322edf369d96dc8dd5e44<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
+pine_tree.tscn::PackedScene::8341164372918984475::1779214627::0::1::::<><><>0<>0<><>::uid://bql1cc345qv7d::::res://trees/pine_tree.png
 player.gd::GDScript::1700623032726953666::1779213338::0::1::::<>CharacterBody2D<><>0<>0<><>::
 player.tscn::PackedScene::6636363802798909755::1779213734::0::1::::<><><>0<>0<><>::uid://pbmyh1qru7p::::res://characters/happy_boo/happy_boo.tscn<>uid://yh2ao5or56lq::::res://player.gd
 survivors_game.tscn::PackedScene::1308940475149137596::1779214104::0::1::::<><><>0<>0<><>::uid://c1sx7bic4uhdj::::res://player.tscn
