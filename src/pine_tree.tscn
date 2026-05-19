@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://dq3r015sr1uql"]
+
+[ext_resource type="Texture2D" uid="uid://bql1cc345qv7d" path="res://trees/pine_tree.png" id="1_1s8l3"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_usc5w"]
+radius = 20.0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ff3rl"]
+load_path = "res://.godot/imported/ground_shadow.png-b9267d10ca04362d5b540659e4ab0dbd.ctex"
+
+[node name="PineTree" type="StaticBody2D" unique_id=1972727067]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=324697891]
+position = Vector2(0, 3)
+shape = SubResource("CircleShape2D_usc5w")
+
+[node name="GroundShadow" type="Sprite2D" parent="." unique_id=2126990715]
+modulate = Color(0.57986915, 0.76661885, 0.7224845, 1)
+position = Vector2(0, 5)
+scale = Vector2(0.7064534, 0.6856189)
+texture = SubResource("CompressedTexture2D_ff3rl")
+
+[node name="PineTree" type="Sprite2D" parent="." unique_id=1216622586]
+position = Vector2(-1, -59)
+texture = ExtResource("1_1s8l3")
