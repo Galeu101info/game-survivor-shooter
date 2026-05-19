@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1779213431
+::res://::1779213540
 default_bus_layout.tres::AudioBusLayout::6564268947468103023::1779199126::0::1::::<><><>0<>0<><>::
 icon.png::CompressedTexture2D::15047351210411190::1779199126::1779212189::1::::<><><>0<>0<>1b715dbefff322edf369d96dc8dd5e44<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
 player.gd::GDScript::1700623032726953666::1779213338::0::1::::<>CharacterBody2D<><>0<>0<><>::
