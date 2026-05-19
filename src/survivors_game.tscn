@@ -4,13 +4,14 @@
 [ext_resource type="PackedScene" uid="uid://dq3r015sr1uql" path="res://pine_tree.tscn" id="2_y3pti"]
 
 [node name="Game" type="Node2D" unique_id=1594005515]
+y_sort_enabled = true
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1942933849]
 offset_right = 1966.0
 offset_bottom = 1130.0
 
 [node name="Player" parent="." unique_id=180732394 instance=ExtResource("1_3cish")]
-position = Vector2(952, 550)
+position = Vector2(968, 525)
 
 [node name="PineTree" parent="." unique_id=1972727067 instance=ExtResource("2_y3pti")]
 position = Vector2(318, 294)
