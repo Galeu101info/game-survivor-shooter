@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-@onready var player = get_node("/root/Game/Playerq")
+@onready var player = get_node("/root/Game/Player")
 
 
 func _physics_process(delta):
