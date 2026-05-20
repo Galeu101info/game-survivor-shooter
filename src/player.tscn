@@ -19,4 +19,4 @@ shape = SubResource("CircleShape2D_onrkg")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1748304488]
 
 [node name="Gun" parent="." unique_id=385057608 instance=ExtResource("3_i3pqv")]
-position = Vector2(0, -40)
+position = Vector2(0, -51)

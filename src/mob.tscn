@@ -7,10 +7,11 @@
 radius = 51.009804
 
 [node name="Mob" type="CharacterBody2D" unique_id=455416556]
+collision_layer = 2
 script = ExtResource("1_nokgg")
 
 [node name="Slime" parent="." unique_id=2008890567 instance=ExtResource("1_dy6sc")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1530651024]
-position = Vector2(0, -26)
+position = Vector2(0, -31)
 shape = SubResource("CircleShape2D_nokgg")
