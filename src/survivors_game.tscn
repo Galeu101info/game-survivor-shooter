@@ -1,11 +1,18 @@
 [gd_scene format=3 uid="uid://swcb8q32cvqi"]
 
 [ext_resource type="PackedScene" uid="uid://c1sx7bic4uhdj" path="res://player.tscn" id="1_3cish"]
-[ext_resource type="PackedScene" uid="uid://y38gte5o0xf8" path="res://mob.tscn" id="2_l26od"]
+[ext_resource type="Script" uid="uid://c1bfau31nfqio" path="res://survivors_game.gd" id="1_l26od"]
 [ext_resource type="PackedScene" uid="uid://dq3r015sr1uql" path="res://pine_tree.tscn" id="2_y3pti"]
+
+[sub_resource type="Curve2D" id="Curve2D_qqaft"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -177, -143, 0, 0, 0, 0, 2071, -140, 0, 0, 0, 0, 2077, 1192, 0, 0, 0, 0, -175, 1195, 0, 0, 0, 0, -178, -149)
+}
+point_count = 5
 
 [node name="Game" type="Node2D" unique_id=1594005515]
 y_sort_enabled = true
+script = ExtResource("1_l26od")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1081443532]
 layer = -1
@@ -22,11 +29,16 @@ offset_bottom = -21.680054
 [node name="Player" parent="." unique_id=180732394 instance=ExtResource("1_3cish")]
 position = Vector2(968, 525)
 
-[node name="Mob" parent="." unique_id=455416556 instance=ExtResource("2_l26od")]
-position = Vector2(361, 661)
+[node name="Path2D" type="Path2D" parent="Player" unique_id=1603265979]
+position = Vector2(-968, -525)
+curve = SubResource("Curve2D_qqaft")
 
-[node name="Mob2" parent="." unique_id=229917408 instance=ExtResource("2_l26od")]
-position = Vector2(609, 335)
+[node name="PathFollow2D" type="PathFollow2D" parent="Player/Path2D" unique_id=1201242672]
+unique_name_in_owner = true
+position = Vector2(-177, -143)
+rotation = 0.0013345188
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1308871549]
 
 [node name="PineTree" parent="." unique_id=1972727067 instance=ExtResource("2_y3pti")]
 position = Vector2(318, 294)
@@ -51,3 +63,9 @@ position = Vector2(1491, 707)
 
 [node name="PineTree8" parent="." unique_id=1276383621 instance=ExtResource("2_y3pti")]
 position = Vector2(1562, 736)
+
+[node name="Timer" type="Timer" parent="." unique_id=214199439]
+wait_time = 0.3
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
