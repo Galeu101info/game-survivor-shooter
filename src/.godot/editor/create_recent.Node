@@ -1,3 +1,6 @@
+Label
+ColorRect
+CanvasLayer
 Camera2D
 Timer
 PathFollow2D
@@ -6,7 +9,5 @@ ProgressBar
 CollisionShape2D
 Area2D
 Marker2D
-CanvasLayer
 CharacterBody2D
 StaticBody2D
-ColorRect
