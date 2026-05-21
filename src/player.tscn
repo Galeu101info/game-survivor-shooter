@@ -10,6 +10,20 @@ radius = 32.0
 [sub_resource type="CircleShape2D" id="CircleShape2D_i3pqv"]
 radius = 40.012497
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i3pqv"]
+bg_color = Color(0.15294118, 0.16862746, 0.1882353, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hqtel"]
+bg_color = Color(0.3882353, 0.8, 0.37254903, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
 [node name="Player" type="CharacterBody2D" unique_id=180732394]
 script = ExtResource("1_onrkg")
 
@@ -32,3 +46,14 @@ collision_mask = 2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox" unique_id=2001148487]
 shape = SubResource("CircleShape2D_i3pqv")
 debug_color = Color(0.66562855, 0.506861, 0.20594472, 0.41960785)
+
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=1588742163]
+unique_name_in_owner = true
+offset_left = -90.0
+offset_top = -141.0
+offset_right = 91.0
+offset_bottom = -114.0
+theme_override_styles/background = SubResource("StyleBoxFlat_i3pqv")
+theme_override_styles/fill = SubResource("StyleBoxFlat_hqtel")
+value = 100.0
+show_percentage = false
