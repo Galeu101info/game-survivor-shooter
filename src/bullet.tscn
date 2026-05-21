@@ -7,9 +7,10 @@
 radius = 18.0
 
 [node name="Bullet" type="Area2D" unique_id=1864115992]
-rotation = 0.6380318
+top_level = true
+rotation = 0.003939709
 collision_layer = 0
-collision_mask = 3
+collision_mask = 2
 script = ExtResource("1_v8qja")
 
 [node name="Projectile" type="Sprite2D" parent="." unique_id=281694781]
@@ -18,3 +19,5 @@ texture = ExtResource("2_t4vbm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1526467294]
 shape = SubResource("CircleShape2D_2b2rl")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
