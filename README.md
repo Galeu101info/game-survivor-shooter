@@ -1,1 +1,3 @@
 This is a survivor-shooter style project that I'm making while following a YouTube tutorial.
+
+![Gif](assets/gameplay.gif)
